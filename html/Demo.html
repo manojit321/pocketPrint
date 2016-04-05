@@ -5,8 +5,25 @@
 <title>Demo App</title>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="../js/pocketprint.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		/* $("html").pocketprint({
+			print: false
+		}); */
+	});
+</script>
+
 </head>
 <body>
-	Print Me
+	<div>Print Me</div>
+	UserName <input type="text" />
+	<div>
+		<input type="button" value="Print" class="pocketprint" />
+		<input type="button" value="PrintPreview" class="pocketprintpreview" />
+	</div>
+	<div>
+		<a href="google.com" style="color: red;">Footer</a> 
+	</div>
 </body>
 </html>
